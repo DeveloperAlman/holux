@@ -1,0 +1,87 @@
+.contact {
+    padding-top: 150px;
+
+    &__wrapper {
+        display: grid;
+        gap: 50px;
+    }
+
+    &__images {}
+
+    &__orb {}
+
+    &__img {}
+
+    &__content-wrapper {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    &__card {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px hsla(228, 66%, 25%, 0.01);
+        border: 3px solid $border-color;
+
+        &-text {}
+    }
+
+    &__card-wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    &__card-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        & i {
+            font-size: 2.5rem;
+            margin-right: 15px;
+            padding: 5px;
+            border-radius: 10px;
+            color: $first-color;
+            background: $first-color-lighten;
+        }
+    }
+
+    &__card-heading {
+        text-align: start;
+        font-size: 1.6rem;
+        color: $text-color;
+    }
+
+    &__card-description {}
+
+    &__card-button {}
+}
+
+.value {
+
+    &__images {}
+
+    &__orb {}
+
+    &__img {}
+
+    &__content {}
+
+    &__content-wrapper {}
+}
+
+.content-value {
+
+    &__description {}
+}
+
+.m-0 {
+    margin-bottom: 0;
+}

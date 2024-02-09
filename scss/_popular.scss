@@ -1,0 +1,94 @@
+.popular {
+    padding-top: 150px;
+
+    &__text {}
+
+    &__text-subtitle {
+        font-size: 2.2rem;
+        color: $second-color;
+    }
+
+    &__text-heading {
+        font-size: 3rem;
+        color: $first-color;
+
+        & span {
+            color: $second-color;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 50px;
+    }
+}
+
+.products {}
+
+.product {
+    margin-bottom: 50px;
+
+    &__img {
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__content {
+        padding: 5px;
+    }
+}
+
+.content-product {
+
+    &__price {
+        font-size: 2rem;
+        margin-bottom: 25px;
+        color: $first-color;
+    }
+
+    &__title {
+        font-size: 2.6rem;
+        color: $first-color;
+        margin-bottom: 5px;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "" !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    bottom: 0;
+    top: initial;
+    width: initial;
+    height: initial;
+    border-radius: 10px;
+    border: 3px solid $first-color;
+    background: $first-color;
+    transition: all 0.5s ease;
+
+    &:is(:hover, :focus-visible) i {
+        color: white;
+    }
+
+    & i {
+        font-size: 4.5rem;
+        color: white;
+        transition: all 0.5s ease;
+    }
+}
+
+.swiper-button-prev {
+    left: calc(50% - 6rem) !important;
+}
+
+.swiper-button-next {
+    right: calc(50% - 6rem) !important;
+}

@@ -1,0 +1,298 @@
+@import 'variables';
+@import 'header';
+@import 'home';
+@import 'logos';
+@import 'popular';
+@import 'value';
+@import 'contact';
+@import 'subscribe';
+@import 'footer';
+@import 'darkLightTheme';
+@import 'scrollLocomotive';
+
+@font-face {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('Poppins Regular'), url('../fonts/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('Poppins Medium'), url('../fonts/Poppins-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('Poppins SemiBold'), url('../fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    backface-visibility: hidden !important;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+    backface-visibility: hidden !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    font-family: 'Poppins Medium', sans-serif;
+    background-color: $body-color;
+    color: $text-color;
+    backface-visibility: hidden !important;
+    overflow-x: hidden !important;
+}
+
+a,
+img,
+span,
+button {
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    outline: none;
+    font: inherit;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.contact__card-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+//MEDIA QUERIES
+//EXTRA SMALL MOBILE DEVICES
+@media screen and (max-width: 340px) {
+
+    .contact__wrapper,
+    .value__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .home {
+        padding-bottom: 0;
+    }
+
+    .home__img img,
+    .home__img,
+    .home__orb,
+    .value__img,
+    .value__img img,
+    .value__orb {
+        width: 280px;
+    }
+}
+
+//TABLETS
+@media screen and (min-width: 768px) {
+
+    .value__accordion,
+    .contact__content-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    }
+
+    .value__wrapper,
+    .contact__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .contact__content-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact__card-content-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .contact__images {
+        order: 1;
+    }
+
+    .value__img img,
+    .value__img,
+    .home__img img,
+    .home__img {
+        width: 340px;
+        height: 420px;
+    }
+
+    .home__orb,
+    .value__orb,
+    .contact__orb {
+        width: 360px;
+        height: 300px;
+    }
+
+    .value__img,
+    .contact__img,
+    .home__img {
+        top: 5%;
+    }
+}
+
+//DESKTOP
+@media screen and (min-width: 1023px) {
+    .home__heading {
+        font-size: 6rem;
+    }
+
+    .home__description {
+        font-size: 2.2rem;
+    }
+
+    .value-home__number {
+        font-size: 2.2rem;
+    }
+
+    .value-home__description {
+        font-size: 2rem;
+    }
+
+    .home {
+        padding-bottom: 100px;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .home__img,
+    .value__img {
+        width: 420px;
+        height: 550px;
+        top: 3%;
+    }
+
+    .home__img img,
+    .value__img img {
+        width: 420px;
+        height: 550px;
+    }
+
+    .home__orb,
+    .value__orb {
+        width: 450px;
+        height: 450px;
+    }
+
+    .popular__text-heading {
+        font-size: 3.6rem;
+    }
+
+    .popular__text-subtitle {
+        font-size: 2.6rem;
+    }
+
+    .content-value__description,
+    .contact__card-description,
+    .contact__card-heading {
+        font-size: 2rem;
+    }
+
+    .value__accordion-title,
+    .value__accordion-description {
+        font-size: 2rem;
+    }
+
+    .contact__card-content-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav__button {
+        font-size: 1.8rem;
+    }
+
+    .subscribe__wrapper {
+        padding: 100px 20px;
+    }
+
+    .subscribe__title {
+        font-size: 4.2rem;
+    }
+
+    .subscribe__description {
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        font-size: 2.4rem;
+        width: 50%;
+        text-align: center;
+    }
+
+    .content-footer__heading {
+        font-size: 2.4rem;
+    }
+
+    .footer__base-logo {
+        font-size: 3.2rem;
+    }
+
+    .content-footer__link,
+    .footer__base-description,
+    .footer__copy-text,
+    .footer__copy-link {
+        font-size: 2rem;
+    }
+}

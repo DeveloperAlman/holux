@@ -1,0 +1,139 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    visibility: hidden;
+    background: none;
+    z-index: 200;
+    animation: header 1s ease forwards;
+
+    &__nav {}
+}
+
+.header.header-display-block {
+    display: block;
+    visibility: visible;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 15px;
+
+    &__logo {}
+
+    &__logo-link {
+        color: white;
+        font-size: 2.8rem;
+        font-weight: bold;
+        transition: all 0.5s ease;
+
+        &:is(:hover, :focus-visible) {
+            color: $first-color;
+        }
+
+    }
+
+    &__menu {
+        position: fixed;
+        bottom: 1.6rem;
+        right: 0;
+        max-width: 1330px;
+        margin: 0 15px;
+        left: 0;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px hsla(228, 66%, 25%, 0.05);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 32px;
+    }
+
+    &__item {}
+
+    &__link {
+        transition: all 0.5s ease;
+
+        &:is(:hover, :focus-visible) {
+            color: $first-color;
+        }
+
+        & span {
+            display: none;
+        }
+
+        & i {
+            font-size: 3rem;
+        }
+    }
+
+    &__button {
+        background: $first-color;
+        padding: 13px 26px;
+        border-radius: 10px;
+        color: white;
+        transition: all 0.5s ease;
+
+        &:is(:hover, :focus-visible) {
+            background: $first-color-alt;
+        }
+
+    }
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-header {
+    position: fixed;
+    top: -20%;
+    left: 0;
+    animation: headerScroll 1s ease forwards;
+    box-shadow: 0 10px 20px hsla(228, 66%, 25%, 0.05);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.scroll-header .nav__logo-link {
+    color: $first-color;
+}
+
+@keyframes header {
+    0% {
+        top: -20%;
+    }
+
+    20% {
+        top: -20%;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+@keyframes headerScroll {
+    0% {
+        top: -20%;
+    }
+
+    20% {
+        top: -20%;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+.container-mobile-padding {
+    padding: 0 !important;
+}

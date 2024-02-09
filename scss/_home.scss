@@ -1,0 +1,154 @@
+.home {
+    background: linear-gradient(170deg, hsl(0, 0%, 22%)0%, hsl(0, 0%, 6%) 45%);
+    padding-bottom: 30px;
+
+    &__wrapper {
+        padding-top: 150px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    &__content-wrapper {
+        display: grid;
+        gap: 40px;
+    }
+
+    &__content {}
+
+    &__heading {
+        font-size: 4.6rem;
+        line-height: 120%;
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        font-size: 2rem;
+        color: $text-color-light;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        border-radius: 20px;
+    }
+
+    &__form-input {
+        padding: 23px;
+        padding-left: 0;
+    }
+
+    &__value {}
+
+    &__images {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        position: absolute;
+        width: 300px;
+        height: 330px;
+        overflow: hidden;
+        border-radius: 130px 130px 20px 20px;
+        display: inline-flex;
+        align-items: flex-end;
+        top: 1rem;
+        box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
+
+        & img {
+            width: 300px;
+            height: 330px;
+        }
+    }
+
+    &__heading,
+    &__value {
+        color: white;
+    }
+}
+
+.section {}
+
+.button {}
+
+.value-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {}
+
+    &__number {
+        font-weight: bold;
+        font-size: 2.4rem;
+
+        & span {
+            color: $second-color;
+        }
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        color: $text-color-light;
+    }
+}
+
+.home__form-button {
+    background: $first-color;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 23px;
+    padding-left: 4px;
+    transition: all 0.5s ease;
+    border-radius: 19px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    &:is(:hover, :focus-visible) {
+        background: $first-color-alt;
+    }
+
+    & i {
+        color: white;
+    }
+}
+
+.location-icon,
+.search-icon {
+    font-size: 3rem;
+    color: $first-color;
+    margin-right: 10px;
+    padding-left: 16px;
+}
+
+.location-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon {
+    margin: 0;
+}
+
+.home__orb {
+    width: 320px;
+    height: 290px;
+    background: linear-gradient(120deg, hsl(0, 0%, 16%)63%, hsl(0, 0%, 67%)100%);
+    border-radius: 130px 130px 20px 20px;
+}
+
+.home__form .button-desktop {
+    display: none;
+    visibility: hidden;
+    padding: 18px 32px;
+    border-radius: 19px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

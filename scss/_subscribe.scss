@@ -1,0 +1,39 @@
+.subscribe {
+    padding-top: 150px;
+
+    &__wrapper {
+        border-radius: 20px;
+        padding: 45px 20px;
+        background: $first-color;
+        color: white;
+        text-align: center;
+        box-shadow: 0 16px 32px rgba(22, 39, 106, 0.1);
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-size: 2.6rem;
+    }
+
+    &__description {
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        background: white;
+        color: $first-color;
+        transition: all 0.5s ease;
+
+        &:is(:hover, :focus-visible) {
+            background: $second-color;
+            color: white;
+        }
+    }
+}
+
+.nav {
+
+    &__button {
+        padding: 14px 28px;
+    }
+}

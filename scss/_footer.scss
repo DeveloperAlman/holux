@@ -1,0 +1,93 @@
+.footer {
+    padding: 150px 0;
+
+    &__wrapper {}
+
+    &__base {
+        margin-bottom: 60px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid $border-color;
+    }
+
+    &__base-logo {
+        color: $first-color;
+        margin-bottom: 5px;
+    }
+
+    &__base-description {}
+
+    &__content {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+
+    &__content-wrapper {}
+
+    &__copy {
+        margin-top: 60px;
+
+    }
+
+    &__copy-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    &__copy-info {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    &__copy-link {
+        transition: all 0.5s ease;
+
+        &:is(:hover, :focus-visible) {
+            color: $first-color;
+        }
+    }
+}
+
+.content-footer {
+    &__heading {
+        color: $first-color;
+        margin-bottom: 30px;
+    }
+
+    &__list {}
+
+    &__item {
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        transition: all 0.5s ease;
+
+        &:is(:hover, :focus-visible) {
+            color: $first-color;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 30px;
+
+        & .content-footer__link {
+            font-size: 3rem;
+        }
+    }
+}
+
+.copyright-year {}
+
+.anivia {
+    color: $first-color;
+    font-weight: bold;
+}

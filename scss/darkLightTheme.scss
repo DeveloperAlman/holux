@@ -1,0 +1,129 @@
+.change-theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+}
+
+.scroll-header .change-theme {
+    color: $text-color;
+}
+
+body.dark-theme {
+    background: #181b25;
+    color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme .nav__menu {
+    background: #181b25;
+    color: white;
+}
+
+body.dark-theme .location-icon,
+body.dark-theme .home__form-button,
+body.dark-theme .content-product__title,
+body.dark-theme .content-product__price,
+body.dark-theme .value__accordion-header>i,
+body.dark-theme .contact__card-info i,
+body.dark-theme .content-footer__heading,
+body.dark-theme .footer__base-logo,
+body.dark-theme .anivia,
+body.dark-theme .content-footer__link:is(:hover, :focus-visible),
+body.dark-theme .footer__copy-link:is(:hover, :focus-visible),
+body.dark-theme .value__accordion-arrow i,
+body.dark-theme .scroll-header .nav__logo-link {
+    color: hsl(228, 97%, 70%);
+}
+
+body.dark-theme .swiper-button-next,
+body.dark-theme .swiper-button-prev,
+body.dark-theme .home__form-button,
+body.dark-theme .nav__button,
+body.dark-theme .subscribe__wrapper,
+body.dark-theme .value__accordion-header:is(:hover, :focus-visible) {
+    background: hsl(228, 97%, 70%);
+}
+
+body.dark-theme .swiper-button-next,
+body.dark-theme .swiper-button-prev,
+body.dark-theme .value__accordion-item {
+    border-color: transparent;
+}
+
+body.dark-theme .subscribe__button {
+    background: white;
+    color: hsl(228, 97%, 70%);
+}
+
+body.dark-theme .value__accordion-description,
+body.dark-theme .contact__card-description {
+    color: #555d80;
+}
+
+
+body.dark-theme .swiper-button-next i,
+body.dark-theme .swiper-button-prev i,
+body.dark-theme .nav__link:is(:hover, :focus-visible) {
+    color: white !important;
+}
+
+body.dark-theme .swiper-button-next:is(:hover, :focus-visible),
+body.dark-theme .swiper-button-prev:is(:hover, :focus-visible),
+body.dark-theme .nav__button:is(:hover, :focus-visible) {
+    background: darken(#6886fd, 7);
+}
+
+body.dark-theme .subscribe__button:is(:hover, :focus-visible) {
+    background: darken(white, 5);
+}
+
+body.dark-theme .popular__text-heading {
+    color: hsl(228, 97%, 70%);
+
+    & span {
+        color: white;
+    }
+}
+
+body.dark-theme .popular__text-subtitle {
+    color: white;
+}
+
+body.dark-theme .value-home__number span {
+    color: hsl(228, 97%, 70%);
+}
+
+body.dark-theme .nav__menu,
+body.dark-theme .scroll-header {
+    background: #6886fd;
+}
+
+body.dark-theme .nav {
+    background: transparent;
+}
+
+body.dark-theme .value__img,
+body.dark-theme .home__img,
+body.dark-theme .subscribe__wrapper {
+    box-shadow: none;
+}
+
+body.dark-theme .value__accordion-arrow i {
+    color: #555d80;
+}
+
+body.dark-theme .home__orb,
+body.dark-theme .value__orb {
+    background: #292929;
+}
+
+body.dark-theme .home {
+    background: linear-gradient(170deg, #0e0a0a 0%, #181b25 50%);
+}
+
+body.dark-theme .nav__logo-link,
+body.dark-theme .change-theme {
+    color: white !important;
+}

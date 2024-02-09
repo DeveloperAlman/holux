@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#2c51e8">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Holux | Real Estate</title>
+</head>
+
+<body data-scroll-container>
+    <header class="header" id="header">
+        <div class="container container-mobile-padding">
+            <nav class="header__nav nav">
+                <div class="nav__logo">
+                    <a href="#home" class="nav__logo-link">Holux</a>
+                </div>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class='bx bx-home-smile'></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#popular" class="nav__link">
+                                <i class='bx bx-building-house'></i>
+                                <span>Residences</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#value" class="nav__link">
+                                <i class='bx bx-award'></i>
+                                <span>Value</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-phone'></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--DARK/LIGHT THEME-->
+                <div class="wrapper">
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <a style="display: none;" href="#subscribe" class="button nav__button">Subscribe</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main" data-main>
+        <section class="home section" id="home" data-scroll-section>
+            <div class="container">
+                <div class="home__wrapper">
+                    <div class="home__content-wrapper">
+                        <div class="home__content">
+                            <h1 loading="eager" class="home__heading">Discover <br> Most Suitable <br> Property</h1>
+                            <p class="home__description">Find a variety of properties that suit
+                                you very easily,
+                                forget all difficulties in finding a residence</p>
+                        </div>
+                        <form action="#" class="home__form">
+                            <i class='bx bxs-map location-icon'></i>
+                            <input type="search" placeholder="Search location" class="home__form-input">
+                            <button class="home__form-button button button-mobile"><i
+                                    class='bx bx-search search-icon'></i></button>
+                            <button class="home__form-button button button-desktop">Search</button>
+                        </form>
+                        <div class="home__value value-home">
+                            <div class="value-home__item">
+                                <p class="value-home__number">9K <span>+</span></p>
+                                <p class="value-home__description">Premium <br> Product</p>
+                            </div>
+                            <div class="value-home__item">
+                                <p class="value-home__number">2K <span>+</span></p>
+                                <p class="value-home__description">Happy <br> Customers</p>
+                            </div>
+                            <div class="value-home__item">
+                                <p class="value-home__number">28 <span>+</span></p>
+                                <p class="value-home__description">Awards <br> Winning</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home__images">
+                        <div class="home__orb"></div>
+                        <div class="home__img"><img src="img/home.webp" alt="Hero"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logos section" data-scroll-section>
+            <div class="container">
+                <div class="logos__wrapper">
+                    <div class="logo">
+                        <img class="logo__img" src="img/logo1.webp" alt="logo-partner" loading="lazy">
+                    </div>
+                    <div class="logo">
+                        <img class="logo__img" src="img/logo2.webp" alt="logo-partner" loading="lazy">
+                    </div>
+                    <div class="logo">
+                        <img class="logo__img" src="img/logo3.webp" alt="logo-partner" loading="lazy">
+                    </div>
+                    <div class="logo">
+                        <img class="logo__img" src="img/logo4.webp" alt="logo-partner" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular section" id="popular" data-scroll-section>
+            <div class="container">
+                <div class="popular__text">
+                    <span class="popular__text-subtitle">Best Choise</span>
+                    <h1 class="popular__text-heading">Popular Residences<span>.</span></h1>
+                </div>
+
+                <div class="popular__wrapper products swiper">
+                    <div class="swiper-wrapper">
+                        <article class="product swiper-slide">
+                            <img src="img/popular1.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular2.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Gables Luxurious House</h2>
+                                <p class="content-product__description">Hanifan Lane Street, Atlanta, State Georgia,
+                                    30308,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>369,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular3.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Aliva Private Garden SE</h2>
+                                <p class="content-product__description">Brunnevägen 49, Kristinehamn, 681 48, Sweden</p>
+                                <h3 class="content-product__price"><span>$</span>104,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular4.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">La Levio Barn Cottage</h2>
+                                <p class="content-product__description">Av. La Molina 993 Street, State
+                                    Lima, 332 94,
+                                    Perú</p>
+                                <h3 class="content-product__price"><span>$</span>89,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular5.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular1.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular2.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Gables Luxurious House</h2>
+                                <p class="content-product__description">Hanifan Lane Street, Atlanta, State Georgia,
+                                    30308,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>369,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular3.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Aliva Private Garden SE</h2>
+                                <p class="content-product__description">Brunnevägen 49, Kristinehamn, 681 48, Sweden</p>
+                                <h3 class="content-product__price"><span>$</span>104,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular4.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">La Levio Barn Cottage</h2>
+                                <p class="content-product__description">Av. La Molina 993 Street, State
+                                    Lima, 332 94,
+                                    Perú</p>
+                                <h3 class="content-product__price"><span>$</span>89,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular5.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-button-next"><i class='bx bx-chevron-right'></i></div>
+                    <div class="swiper-button-prev"><i class='bx bx-chevron-left'></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular section" id="popular" data-scroll-section>
+            <div class="container">
+                <div class="popular__text">
+                    <span class="popular__text-subtitle">Best Choise</span>
+                    <h1 class="popular__text-heading">Popular Residences<span>.</span></h1>
+                </div>
+
+                <div class="popular__wrapper products swiper">
+                    <div class="swiper-wrapper">
+                        <article class="product swiper-slide">
+                            <img src="img/popular1.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular2.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Gables Luxurious House</h2>
+                                <p class="content-product__description">Hanifan Lane Street, Atlanta, State Georgia,
+                                    30308,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>369,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular3.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Aliva Private Garden SE</h2>
+                                <p class="content-product__description">Brunnevägen 49, Kristinehamn, 681 48, Sweden</p>
+                                <h3 class="content-product__price"><span>$</span>104,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular4.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">La Levio Barn Cottage</h2>
+                                <p class="content-product__description">Av. La Molina 993 Street, State
+                                    Lima, 332 94,
+                                    Perú</p>
+                                <h3 class="content-product__price"><span>$</span>89,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular5.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular1.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular2.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Gables Luxurious House</h2>
+                                <p class="content-product__description">Hanifan Lane Street, Atlanta, State Georgia,
+                                    30308,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>369,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular3.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Aliva Private Garden SE</h2>
+                                <p class="content-product__description">Brunnevägen 49, Kristinehamn, 681 48, Sweden</p>
+                                <h3 class="content-product__price"><span>$</span>104,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular4.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">La Levio Barn Cottage</h2>
+                                <p class="content-product__description">Av. La Molina 993 Street, State
+                                    Lima, 332 94,
+                                    Perú</p>
+                                <h3 class="content-product__price"><span>$</span>89,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular5.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-button-next"><i class='bx bx-chevron-right'></i></div>
+                    <div class="swiper-button-prev"><i class='bx bx-chevron-left'></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular section" id="popular" data-scroll-section>
+            <div class="container">
+                <div class="popular__text">
+                    <span class="popular__text-subtitle">Best Choise</span>
+                    <h1 class="popular__text-heading">Popular Residences<span>.</span></h1>
+                </div>
+
+                <div class="popular__wrapper products swiper">
+                    <div class="swiper-wrapper">
+                        <article class="product swiper-slide">
+                            <img src="img/popular1.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular2.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Gables Luxurious House</h2>
+                                <p class="content-product__description">Hanifan Lane Street, Atlanta, State Georgia,
+                                    30308,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>369,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular3.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Aliva Private Garden SE</h2>
+                                <p class="content-product__description">Brunnevägen 49, Kristinehamn, 681 48, Sweden</p>
+                                <h3 class="content-product__price"><span>$</span>104,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular4.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">La Levio Barn Cottage</h2>
+                                <p class="content-product__description">Av. La Molina 993 Street, State
+                                    Lima, 332 94,
+                                    Perú</p>
+                                <h3 class="content-product__price"><span>$</span>89,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular5.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular1.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular2.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Gables Luxurious House</h2>
+                                <p class="content-product__description">Hanifan Lane Street, Atlanta, State Georgia,
+                                    30308,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>369,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular3.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Aliva Private Garden SE</h2>
+                                <p class="content-product__description">Brunnevägen 49, Kristinehamn, 681 48, Sweden</p>
+                                <h3 class="content-product__price"><span>$</span>104,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular4.webp" alt="product-1" class="product__img" loading="lazy">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">La Levio Barn Cottage</h2>
+                                <p class="content-product__description">Av. La Molina 993 Street, State
+                                    Lima, 332 94,
+                                    Perú</p>
+                                <h3 class="content-product__price"><span>$</span>89,000</h3>
+                            </div>
+                        </article>
+
+                        <article class="product swiper-slide">
+                            <img src="img/popular5.webp" alt="product-1" class="product__img">
+
+                            <div class="product__content content-product">
+                                <h2 class="content-product__title">Garden City Assat</h2>
+                                <p class="content-product__description">Crim Lane Street, Hillsboro, State Ohio, 45133,
+                                    USA</p>
+                                <h3 class="content-product__price"><span>$</span>239,000</h3>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-button-next"><i class='bx bx-chevron-right'></i></div>
+                    <div class="swiper-button-prev"><i class='bx bx-chevron-left'></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="value section" id="value" data-scroll-section>
+            <div class="container">
+                <div class="value__wrapper">
+                    <div class="value__images">
+                        <div class="value__orb"></div>
+                        <div class="value__img">
+                            <img src="img/value.webp" alt="Value">
+                        </div>
+                    </div>
+
+                    <div class="value__content content-value">
+                        <div class="value__content-wrapper">
+                            <span class="popular__text-subtitle">Our Value</span>
+                            <h1 class="popular__text-heading">Value We Give To U<span>.</span></h1>
+                            <p class="content-value__description">We always ready to help by providing the best service
+                                for you. We believe a good place to live can make your life better</p>
+                        </div>
+
+                        <div class="value__accordion">
+                            <div class="value__accordion-item">
+                                <div class="value__accordion-header">
+                                    <i class='bx bxs-message-square-dots'></i>
+                                    <h3 class="value__accordion-title">High rates on the market</h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class='bx bxs-down-arrow'></i>
+                                    </div>
+                                </div>
+
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">Price we provides is the best for you,
+                                        we guarantee no price changes on your property due
+                                        to various unexpected costs that may come</p>
+                                </div>
+                            </div>
+                            <div class="value__accordion-item">
+                                <div class="value__accordion-header">
+                                    <i class='bx bx-line-chart'></i>
+                                    <h3 class="value__accordion-title">Prevent unstable prices</h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class='bx bxs-down-arrow'></i>
+                                    </div>
+                                </div>
+
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">Price we provides is the best for you,
+                                        we guarantee no price changes on your property due
+                                        to various unexpected costs that may come</p>
+                                </div>
+                            </div>
+                            <div class="value__accordion-item">
+                                <div class="value__accordion-header">
+                                    <i class='bx bxs-purchase-tag'></i>
+                                    <h3 class="value__accordion-title">Best prices on the market</h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class='bx bxs-down-arrow'></i>
+                                    </div>
+                                </div>
+
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">Price we provides is the best for you,
+                                        we guarantee no price changes on your property due
+                                        to various unexpected costs that may come</p>
+                                </div>
+                            </div>
+                            <div class="value__accordion-item">
+                                <div class="value__accordion-header">
+                                    <i class='bx bxs-check-shield'></i>
+                                    <h3 class="value__accordion-title">Security of your data</h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class='bx bxs-down-arrow'></i>
+                                    </div>
+                                </div>
+
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">Price we provides is the best for you,
+                                        we guarantee no price changes on your property due
+                                        to various unexpected costs that may come</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact" data-scroll-section>
+            <div class="container">
+                <div class="contact__wrapper">
+                    <div class="value__images contact__images">
+                        <div class="value__orb contact__orb"></div>
+                        <div class="value__img contact__img">
+                            <img src="img/contact.webp" alt="Contact">
+                        </div>
+                    </div>
+                    <div class="contact__content-wrapper">
+                        <div class="value__content content-value">
+                            <div class="value__content-wrapper m-0">
+                                <span class="popular__text-subtitle">Contact Us</span>
+                                <h1 class="popular__text-heading">Easy to Contact us<span>.</span></h1>
+                                <p class="content-value__description">Is there a problem finding your dream home? Need a
+                                    guide in buying first home or need a consultation
+                                    on residential issues? Just contact us</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__card-content-wrapper">
+                            <div class="contact__card">
+                                <div class="contact__card-wrapper">
+                                    <div class="contact__card-info">
+                                        <i class='bx bxs-phone'></i>
+                                        <div class="contact__card-text">
+                                            <h3 class="contact__card-heading">Call</h3>
+                                            <p class="contact__card-description">0707845466</p>
+                                        </div>
+                                    </div>
+
+                                    <button class="nav__button contact__card-button">Call now</button>
+                                </div>
+                            </div>
+
+                            <div class="contact__card">
+                                <div class="contact__card-wrapper">
+                                    <div class="contact__card-info">
+                                        <i class='bx bxs-message-square-dots'></i>
+                                        <div class="contact__card-text">
+                                            <h3 class="contact__card-heading">Chat</h3>
+                                            <p class="contact__card-description">tg.com/anivia</p>
+                                        </div>
+                                    </div>
+
+                                    <button class="nav__button contact__card-button">Chat Now</button>
+                                </div>
+                            </div>
+
+                            <div class="contact__card">
+                                <div class="contact__card-wrapper">
+                                    <div class="contact__card-info">
+                                        <i class='bx bxs-video'></i>
+                                        <div class="contact__card-text">
+                                            <h3 class="contact__card-heading">Video Call</h3>
+                                            <p class="contact__card-description">zoom.in/anivia</p>
+                                        </div>
+                                    </div>
+
+                                    <button class="nav__button contact__card-button">Video Call</button>
+                                </div>
+                            </div>
+
+                            <div class="contact__card">
+                                <div class="contact__card-wrapper">
+                                    <div class="contact__card-info">
+                                        <i class='bx bxs-envelope'></i>
+                                        <div class="contact__card-text">
+                                            <h3 class="contact__card-heading">Message</h3>
+                                            <p class="contact__card-description">sales@anivia.se</p>
+                                        </div>
+                                    </div>
+
+                                    <button class="nav__button contact__card-button">Message Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe section" id="subscribe" data-scroll-section>
+            <div class="container">
+                <div class="subscribe__wrapper">
+                    <h2 class="subscribe__title">Subscribe with Holux</h2>
+                    <p class="subscribe__description">Subscribe and find super attractive price quotes from us, and find
+                        your dream residence soon</p>
+                    <a href="#home" class="nav__button subscribe__button">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section" data-scroll-section>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__base">
+                    <div class="nav__logo">
+                        <a href="#home" class="footer__base-logo nav__logo-link">Holux</a>
+                    </div>
+                    <p class="footer__base-description">Our vision is to make all people the best place to live for
+                        them</p>
+                </div>
+
+                <div class="footer__content content-footer">
+                    <div class="footer__content-wrapper">
+                        <h3 class="content-footer__heading">About</h3>
+
+                        <ul class="content-footer__list">
+                            <li class="content-footer__item"><a href="#" class="content-footer__link">About Us</a></li>
+                            <li class="content-footer__item"><a href="#" class="content-footer__link">Features</a></li>
+                            <li class="content-footer__item"><a href="#" class="content-footer__link">News & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content-wrapper">
+                        <h3 class="content-footer__heading">Company</h3>
+
+                        <ul class="content-footer__list">
+                            <li class="content-footer__item"><a href="#" class="content-footer__link">How We Work</a>
+                            </li>
+                            <li class="content-footer__item"><a href="#" class="content-footer__link">Capital</a></li>
+                            <li class="content-footer__item"><a href="#" class="content-footer__link">Security</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content-wrapper">
+                        <h3 class="content-footer__heading">Support</h3>
+
+                        <ul class="content-footer__list">
+                            <li class="content-footer__item"><a href="#" class="content-footer__link">FAQ</a></li>
+                            <li class="content-footer__item"><a href="#" class="content-footer__link">Support Centre</a>
+                            </li>
+                            <li class="content-footer__item"><a href="#" class="content-footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content-wrapper">
+                        <h3 class="content-footer__heading">Follow</h3>
+
+                        <ul class="content-footer__social">
+                            <li class="content-footer__item"><a href="#" class="content-footer__link"><i
+                                        class='bx bxl-meta'></i></a>
+                            </li>
+                            <li class="content-footer__item"><a href="#" class="content-footer__link"><i
+                                        class='bx bxl-instagram'></i></a></li>
+                            <li class="content-footer__item"><a href="#" class="content-footer__link"><i
+                                        class='bx bxl-pinterest-alt'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <aside class="footer__copy-text">© <span class="copyright-year">2023</span> Hollux Realty - All
+                    rights reserved. Developed by
+                    <a class="anivia" href="https://anivia.se" onclick="window.open('https://anivia.se')"
+                        target="_blank">Anivia Marketing
+                        Agency</a>
+                </aside>
+                <div class="footer__copy-info">
+                    <a href="#" class="footer__copy-link">Terms & Agreements</a>
+                    <a href="#" class="footer__copy-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' media="print"
+        onload="this.media='all'">
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+.value {
+    padding-top: 150px;
+
+    &__wrapper {
+        display: grid;
+        gap: 50px;
+    }
+
+    &__images {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    &__orb {
+        width: 320px;
+        height: 290px;
+        background: linear-gradient(-180deg, hsl(0, 0%, 16%)14%, hsl(0, 0%, 67%)40%);
+        border-radius: 130px 130px 20px 20px;
+    }
+
+    &__img {
+        position: absolute;
+        width: 300px;
+        height: 330px;
+        overflow: hidden;
+        border-radius: 130px 130px 20px 20px;
+        display: inline-flex;
+        align-items: flex-end;
+        bottom: -5rem;
+        box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
+
+        & img {
+            width: 300px;
+            height: 330px;
+        }
+    }
+
+    &__content {}
+
+    &__content-wrapper {
+        margin-bottom: 50px;
+
+        & h1 {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__accordion-item {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px hsla(228, 66%, 25%, 0.01);
+        border: 3px solid $border-color;
+    }
+
+    &__accordion-header {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 26px;
+        transition: all 0.5s ease;
+
+        &:is(:hover, :focus-visible) {
+            background: $first-color;
+        }
+
+        &:is(:hover, :focus-visible) {
+            color: white !important;
+        }
+
+        &:is(:hover, :focus-visible) i {
+            color: white !important;
+        }
+
+        &:is(:hover, :focus-visible) .value__accordion-title {
+            color: white;
+        }
+
+        &>i {
+            color: $first-color;
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+    }
+
+    &__accordion-title {
+        font-size: 1.6rem;
+        color: $text-color;
+        flex: 1;
+        justify-self: flex-start;
+    }
+
+    &__accordion-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & i {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__accordion-content {
+        overflow: hidden;
+        height: 0;
+        transition: all 0.5s ease;
+
+        & p {
+            padding: 20px;
+        }
+    }
+
+    &__accordion-description {
+        font-size: 1.6rem;
+        text-wrap: balance;
+    }
+}
+
+.content-value {
+
+    &__description {}
+}
+
+.accordion-open {
+    box-shadow: 0 10px 20px hsla(228, 66%, 25%, 0.03);
+}
